@@ -1,13 +1,14 @@
 
-<body>
+<body class="whole">
 <h1 style="text-align:center" >Immunization Tracking and Management Platform </h1>
 <h2 style="text-align:center" >ITAMP 2.0</h2>
 <div id="mySidenav" class="sidenav">
 <nav  style="text-align:center" >
-  <a routerLink="/login-page" routerLinkActive="active"><b>User Login</b></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a routerLink="/register-page" routerLinkActive="active"><b>User Register</b></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a routerLink="/details-page" routerLinkActive="active"><b>Enter Details</b></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a routerLink="/view-page" routerLinkActive="active"><b>View Details</b></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" value="User Login" onclick="window.location='/login-page';"/>&nbsp;&nbsp;&nbsp;&nbsp;  
+<input type="button" value="User Register" onclick="window.location='/register-page';"/>&nbsp;&nbsp;&nbsp;&nbsp;           
+<input type="button" value="Enter Child Details" onclick="window.location='/details-page';"/>&nbsp;&nbsp;&nbsp;&nbsp; 
+<input type="button" value="View Details of Child" onclick="window.location='/view-page';"/>&nbsp;&nbsp;&nbsp;&nbsp; 
+  
 </nav></div>
 <router-outlet></router-outlet>
 </body>

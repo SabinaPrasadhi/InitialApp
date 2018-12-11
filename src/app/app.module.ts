@@ -10,13 +10,16 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { RegisterPageComponent } from './register-page/register-page.component';
 import { DetailsPageComponent } from './details-page/details-page.component';
 import { ViewPageComponent } from './view-page/view-page.component';
+import { DoctorViewPageComponent } from './doctor-view-page/doctor-view-page.component';
+import { NurseViewPageComponent } from './nurse-view-page/nurse-view-page.component';
 
 const appRoutes: Routes = [
   { path: 'login-page', component: LoginPageComponent },
   { path: 'register-page', component: RegisterPageComponent },
   { path: 'details-page', component: DetailsPageComponent },
-  { path: 'view-page', component: ViewPageComponent }
-  
+  { path: 'view-page', component: ViewPageComponent },
+  { path: 'doctor-view-page', component: DoctorViewPageComponent },
+  { path: 'nurse-view-page', component: NurseViewPageComponent }
 ];
 
 @NgModule({
@@ -25,7 +28,9 @@ const appRoutes: Routes = [
     LoginPageComponent,
     RegisterPageComponent,
     DetailsPageComponent,
-    ViewPageComponent
+    ViewPageComponent,
+    DoctorViewPageComponent,
+    NurseViewPageComponent
   ],
   imports: [
   
