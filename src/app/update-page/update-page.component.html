@@ -1,13 +1,12 @@
-<p>
-  <div style="text-align:left">
-    
-   <body>
+<h1>Welcome to the Child Details Update Page!</h1>
+
+<body>
     <form>
       <div class="form-group">
         <label for="exampleFormControlInput1">Birth Registration ID:</label>&nbsp;
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="<New>"><br><br>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="<New>" disabled><br><br>
             <label for="exampleFormControlInput1">Registration Date:</label>&nbsp;
-            <input type="date" class="form-control" id="exampleFormControlInput2" placeholder="<Select New Date>">
+            <input type="date" class="form-control" id="exampleFormControlInput2" placeholder="<Select New Date>" disabled>
   
       </div><br><fieldset>
         <legend>Child Details</legend>
@@ -15,7 +14,7 @@
           <label for="exampleFormControlInput1">Full Name:</label>&nbsp;
           <input type="text" class="form-control" id="exampleFormControlInput1"><br><br>
             <label for="exampleFormControlInput1">HIN:</label>&nbsp;
-          <input type="text" class="form-control" id="exampleFormControlInput2"><br><br>
+          <input type="text" class="form-control" id="exampleFormControlInput2" disabled><br><br>
           <fieldset>
               <legend>Birth Details</legend>
               <label for="exampleFormControlInput1">Date of Birth:</label>&nbsp;
@@ -23,7 +22,7 @@
                 <label for="exampleFormControlInput1">Time of Birth:</label>&nbsp;
                 <input type="time" class="form-control" id="exampleFormControlInput4"><br><br>
                 <label for="exampleFormControlSelect1">Gender: </label>
-        <select class="form-control" id="exampleFormControlSelect1">
+        <select class="form-control" id="exampleFormControlSelect1" disabled>
           <option>Male</option>
           <option>Female</option>
           
@@ -108,13 +107,13 @@
                       <label for="exampleFormControlInput1">Mother's Maiden Name:</label>&nbsp;
                           <input type="text" class="form-control" id="exampleFormControlInput11"><br><br>
                           <label for="exampleFormControlInput1">Mother's NIC:</label>&nbsp;
-                          <input type="text" class="form-control" id="exampleFormControlInput12"><br><br>
+                          <input type="text" class="form-control" id="exampleFormControlInput12" disabled><br><br>
                           <label for="exampleFormControlInput1">Mother's Reg. No:</label>&nbsp;
-                          <input type="text" class="form-control" id="exampleFormControlInput13"><br><br>
+                          <input type="text" class="form-control" id="exampleFormControlInput13" disabled><br><br>
                           <label for="exampleFormControlInput1">Father/Guardian Name:</label>&nbsp;
                           <input type="text" class="form-control" id="exampleFormControlInput14"><br><br>
                           <label for="exampleFormControlInput1">Father/Guardian NIC:</label>&nbsp;
-                          <input type="text" class="form-control" id="exampleFormControlInput15"><br><br>
+                          <input type="text" class="form-control" id="exampleFormControlInput15" disabled><br><br>
                           <label for="exampleFormControlInput1">Contact No.:</label>&nbsp;
                           <input type="text" class="form-control" id="exampleFormControlInput16"><br><br>
                           <input type="checkbox" value="MB">Multiple Births<br>
@@ -123,11 +122,11 @@
   <br><fieldset>
       <legend>Additional Information</legend>
       <label for="exampleFormControlInput1">Mother's BHT No.:</label>&nbsp;
-        <input type="text" class="form-control" id="exampleFormControlInput17"><br><br>
+        <input type="text" class="form-control" id="exampleFormControlInput17" disabled><br><br>
         <label for="exampleFormControlInput1">Ward:</label>&nbsp;
         <input type="text" class="form-control" id="exampleFormControlInput18"><br><br>
         <label for="exampleFormControlInput1">Birth Certificate No.:</label>&nbsp;
-        <input type="text" class="form-control" id="exampleFormControlInput19"><br><br>
+        <input type="text" class="form-control" id="exampleFormControlInput19" disabled><br><br>
         <label for="exampleFormControlInput1">Details of Delivery:</label>&nbsp;
         <select class="form-control" id="exampleFormControlSelect2">
             <option></option>
@@ -148,7 +147,8 @@
       </fieldset>     
   </fieldset><br> 
   <div style="text-align:center">
-  <input type="submit" value="Submit">&nbsp;<input type="reset" value="Reset">&nbsp;
+  
+  <input type="submit" value="Submit">&nbsp;<input type="reset" value="Reset"/> <input type="button" value="Go back to View Page" onclick="window.location='/view-page';"/> &nbsp;
   
   </div><br>
   </fieldset>

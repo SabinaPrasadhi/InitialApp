@@ -12,6 +12,10 @@ import { DetailsPageComponent } from './details-page/details-page.component';
 import { ViewPageComponent } from './view-page/view-page.component';
 import { DoctorViewPageComponent } from './doctor-view-page/doctor-view-page.component';
 import { NurseViewPageComponent } from './nurse-view-page/nurse-view-page.component';
+import { UpdatePageComponent } from './update-page/update-page.component';
+import { ViewSubPageComponent } from './view-sub-page/view-sub-page.component';
+import { ViewdocSubPageComponent } from './viewdoc-sub-page/viewdoc-sub-page.component';
+
 
 const appRoutes: Routes = [
   { path: 'login-page', component: LoginPageComponent },
@@ -19,8 +23,12 @@ const appRoutes: Routes = [
   { path: 'details-page', component: DetailsPageComponent },
   { path: 'view-page', component: ViewPageComponent },
   { path: 'doctor-view-page', component: DoctorViewPageComponent },
-  { path: 'nurse-view-page', component: NurseViewPageComponent }
+  { path: 'nurse-view-page', component: NurseViewPageComponent },
+  { path: 'update-page', component: UpdatePageComponent },
+  { path: 'view-sub-page', component: ViewSubPageComponent },
+  { path: 'viewdoc-sub-page', component: ViewdocSubPageComponent}
 ];
+;
 
 @NgModule({
   declarations: [
@@ -30,11 +38,16 @@ const appRoutes: Routes = [
     DetailsPageComponent,
     ViewPageComponent,
     DoctorViewPageComponent,
-    NurseViewPageComponent
+    NurseViewPageComponent,
+    UpdatePageComponent,
+    ViewSubPageComponent,
+    ViewdocSubPageComponent
+   
   ],
   imports: [
   
     BrowserModule,
+  
     FormsModule,
     RouterModule.forRoot(
       appRoutes,
